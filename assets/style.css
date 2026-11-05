@@ -63,8 +63,15 @@ h2 { font-family: Georgia, "Times New Roman", serif; color: var(--brand); font-s
 .embed-movil { display: none; }
 .nota { color: var(--ink-2); font-size: .95rem; margin-top: 12px; }
 
-.pubs { padding-left: 20px; }
-.pubs li { margin-bottom: 8px; }
+.pubs { list-style: none; padding: 0; margin: 0; }
+.pub-card { background: var(--hero-bg); border: 1px solid var(--line); border-left: 3px solid var(--accent); border-radius: 8px; padding: 16px 20px; margin-bottom: 12px; overflow-wrap: anywhere; }
+.etiqueta { display: block; margin-bottom: 6px; text-transform: uppercase; letter-spacing: .08em; font-size: .72rem; font-weight: 700; color: var(--accent); }
+
+html { scroll-behavior: smooth; }
+section { scroll-margin-top: 12px; }
+.atajos { margin-top: 14px; font-size: .95rem; color: var(--ink-2); }
+.atajos a { color: var(--hero-ink); font-weight: 600; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
 
 .pie { color: var(--ink-2); font-size: .85rem; border-top: 1px solid var(--line); margin-top: 48px; padding-top: 16px; padding-bottom: 24px; }
 
